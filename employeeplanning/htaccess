@@ -1,0 +1,12 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^http://jst-main.store/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://jst-main.store$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.jst-main.store/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.jst-main.store$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://jst-main.store/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://jst-main.store$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.jst-main.store/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.jst-main.store$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
